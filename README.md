@@ -1,10 +1,13 @@
-# RAD 28 - Better Blinds
+# RAD 28 - Better Blinds  
+**EG 1004, Section C2**  
 
-Lalit Barmecha: Head of Programming
+## Project Overview  
+This repository contains the code for the **Better Blinds** project, a smart blinds system designed to create a highly autonomous set of smart blinds that adjusts based on environmental conditions and user preferences. 
 
-Yashvardhan Barot: Head of Design
+---
 
-Maria Carseli: 
-
-Safal Ghimire: Head of Hardware
-
+## Team Members  
+- **Lalit Barmecha** – Head of Programming  
+- **Yashvardhan Barot** – Head of Design  
+- **Maria Carseli** –  
+- **Safal Ghimire** – Head of Hardware  
