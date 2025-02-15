@@ -9,5 +9,5 @@ This repository contains the code for the **Better Blinds** project, a smart bli
 ## Team Members  
 - **Lalit Barmecha** – Head of Programming  
 - **Yashvardhan Barot** – Head of Design  
-- **Maria Carseli** –  
+- **Maria Carseli** –  Head of ... something
 - **Safal Ghimire** – Head of Hardware  
