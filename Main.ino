@@ -1,6 +1,3 @@
-/*
-
-*/
 #include <Wire.h>
 #include <time.h>
 #include <DS3231.h>
@@ -12,7 +9,10 @@ bool CenturyBit;
 
 #define A0_Light A0
 #define D7_RTC 7
-
+#define A1_Audio A1
+//#define D1 1
+bool status = false;
+bool preferredStatus = false;
 
 void setup() {
   Wire.begin();  
@@ -28,18 +28,38 @@ void loop() {
   byte theMinute = myRTC.getMinute();
   byte theSecond = myRTC.getSecond();
 
+  //int audio = analogRead(A1_Audio);
 
+  int audio = analogRead(A1_Audio);
+  if (light < 500) {
+    preferredStatus = true;
+  }
+  else if (audio > 260) {
+    preferredStatus = true;
+  }
+  //else if (theHour > 16 || theHour < 7) {
+    //preferredStatus = true;
+  //} 
+  else {
+    preferredStatus = false;
+  }
 
-
-
-
-
-
-
+  if (status != preferredStatus) {
+    if (status == false) {
+      Serial.println("Blinds Down");
+      status = true;
+    } else {
+      Serial.println("Blinds Up");
+      status = false;
+    }
+  }
+  
   
   // Tests
-  Serial.println("Hour",theHour);
-  Serial.println("Minutes",theMinute);
-  Serial.println("Seconds",theSecond);
+  Serial.println(light);
+  Serial.println(theHour);
+  //Serial.println("Minutes",theMinute);
+  //Serial.println("Seconds",theSecond);
+  Serial.println(audio);
   delay(1000);
 }
