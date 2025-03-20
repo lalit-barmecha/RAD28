@@ -8,7 +8,6 @@ bool hPM;
 bool CenturyBit;
 
 #define A0_Light A0
-#define D7_RTC 7
 #define A1_Audio A1
 //#define D1 1
 bool status = false;
@@ -19,6 +18,9 @@ void setup() {
   Serial.begin(9600); 
   bool mode12 = false;
   myRTC.setClockMode(mode12);
+  //myRTC.setHour(8);
+  //myRTC.setMinute(44);
+  //myRTC.setSecond(30);
 }
 
 void loop() {
@@ -31,10 +33,10 @@ void loop() {
   //int audio = analogRead(A1_Audio);
 
   int audio = analogRead(A1_Audio);
-  if (light < 500) {
+  if (light < 300) {
     preferredStatus = true;
   }
-  else if (audio > 260) {
+  else if (audio > 300) {
     preferredStatus = true;
   }
   //else if (theHour > 16 || theHour < 7) {
@@ -56,10 +58,13 @@ void loop() {
   
   
   // Tests
+  Serial.print("light");
   Serial.println(light);
+  Serial.print("Hour");
   Serial.println(theHour);
-  //Serial.println("Minutes",theMinute);
-  //Serial.println("Seconds",theSecond);
+  //Serial.println(theMinute);
+  //Serial.println(theSecond);
+  Serial.print("audio");
   Serial.println(audio);
   delay(1000);
 }
