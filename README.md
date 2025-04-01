@@ -11,3 +11,17 @@ This repository contains the code for the **Better Blinds** project, a smart bli
 - **Yashvardhan Barot** – Head of Design  
 - **Maria Carseli** –  Head of ... something
 - **Safal Ghimire** – Head of Hardware  
+
+---
+## How to run the code
+### Arduino IDE
+- Download and open Main.ino in the Arduino IDE
+- Connect to the Arduino Board
+- Install all relevant modules (find them in the first few lines of the code that start with #define {module_name})
+- Commit and verify
+
+## Arduino Cloud
+- Copy the code in the cloud IDE.
+- Install the Arduino Client if prompted.
+- Connect to the Arduino Board
+- Commit and verify
