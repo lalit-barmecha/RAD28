@@ -39,6 +39,7 @@ void setup() {
 }
 
 void loop() {
+  //Get current status
   //Getting all inputs
   int light = analogRead(A0_Light);
   int light2 = analogRead(A2_Light);
@@ -77,6 +78,7 @@ void loop() {
       u8g2.sendBuffer(); 
       // Send signal to motor
       status = false;
+      delay(10000);
     }
   }
   
