@@ -3,7 +3,7 @@
 
 ## Project Overview  
 This repository contains the code for the **Better Blinds** project, a smart blinds system designed to create a highly autonomous set of smart blinds that adjusts based on environmental conditions and user preferences. 
-This project was done Spring 2025 at NYU Tandon School of Engineering
+This project was done Spring 2025 at NYU Tandon School of Engineering as a part of the EG 1004 course. 
 
 ---
 
