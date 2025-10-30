@@ -3,14 +3,14 @@
 
 ## Project Overview  
 This repository contains the code for the **Better Blinds** project, a smart blinds system designed to create a highly autonomous set of smart blinds that adjusts based on environmental conditions and user preferences. 
+This project was done Spring 2025 at NYU Tandon School of Engineering
 
 ---
 
 ## Team Members  
-- **Lalit Barmecha** – Head of Programming  
-- **Yashvardhan Barot** – Head of Design  
-- **Maria Carseli** –  Head of ... something
-- **Safal Ghimire** – Head of Hardware  
+- **Lalit Barmecha** – Software Design  
+- **Yashvardhan Barot** – Mechanical Design
+- **Safal Ghimire** – Hardware Software Integration
 
 ---
 ## How to run the code
