@@ -10,7 +10,7 @@ This project was done Spring 2025 at NYU Tandon School of Engineering as a part 
 ## Team Members  
 - **Lalit Barmecha** – Software Design  
 - **Yashvardhan Barot** – Mechanical Design
-- **Safal Ghimire** – Hardware Software Integration
+- **Safal Ghimire** – Hardware Software Integration and testing
 
 ---
 ## How to run the code
