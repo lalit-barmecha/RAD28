@@ -2,7 +2,7 @@
 #include <Adafruit_MotorShield.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include <RTClib.h>  // RTC library
+#include <RTClib.h> 
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
@@ -19,10 +19,10 @@ const int open_detection_val = 750;
 
 bool blind_status = false;
 
-Adafruit_MotorShield AFMS = Adafruit_MotorShield();
-Adafruit_DCMotor *motor = AFMS.getMotor(1);
+Adafruit_MotorShield AFMS = Adafruit_MotorShield(); //motor shield OBJECT
+Adafruit_DCMotor *motor = AFMS.getMotor(1); //MOTOR object ptr
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
-RTC_DS3231 rtc;  // Create RTC object
+RTC_DS3231 rtc; 
 
 void stop() {
   while (1) {
